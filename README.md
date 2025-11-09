@@ -103,28 +103,6 @@ Run basic strategy unit tests:
 python3 -m pytest tests/test_basic_strategy.py
 ```
 
-## 📁 Project Structure
-
-```
-bj_advisor/
-├── simulate.py              # 🚀 MAIN ENTRY POINT
-├── src/
-│   ├── core/               # Game engine
-│   │   ├── card.py         # Hi-Lo card system
-│   │   ├── hand.py         # Hand evaluation
-│   │   ├── table.py        # Game state management
-│   │   └── rules.py        # S17 rules
-│   ├── strategy/           # Strategy engine  
-│   │   ├── basic_strategy.py # S17 basic strategy tables
-│   │   ├── index_plays.py    # Illustrious 18 + deviations
-│   │   └── advisor.py        # Integrated recommendations
-│   └── tui/               # Terminal interface
-│       └── table_simulator.py # Enhanced UI with undo system
-└── tests/                 # Test suite
-    ├── test_basic_strategy.py      # Unit tests
-    └── test_professional_plays.py  # Index play verification
-```
-
 ## 🎖️ Professional Standards
 
 This advisor implements **exact thresholds from trusted sources**:
@@ -134,10 +112,3 @@ This advisor implements **exact thresholds from trusted sources**:
 - **Stanford Wong** methodology from "Professional Blackjack"
 - **Don Schlesinger** index play research from "Blackjack Attack"
 
-## ⚠️ Legal Notice
-
-This software is for **educational and training purposes only**. Use responsibly and in accordance with local laws and casino policies.
-
----
-
-**Ready to become a better blackjack player? Run `python3 simulate.py` and start practicing!** 🃏
