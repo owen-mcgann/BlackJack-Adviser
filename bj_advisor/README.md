@@ -8,19 +8,16 @@ A terminal-based blackjack advisor that tracks live casino games and provides re
 ```bash
 python3 simulate.py
 ```
-
-That's it! This is the **main entry point** for the complete blackjack tracking system.
-
 ## 🎯 What This Does
 
 This is a **professional-grade card counting trainer** that:
 
-- ✅ **Tracks live casino blackjack games** in real-time
-- ✅ **Provides count-aware strategy advice** using exact Wizard of Odds thresholds  
-- ✅ **Includes the complete Illustrious 18** index plays with precise true count deviations
-- ✅ **Supports multiple players** and realistic casino game flow
-- ✅ **Features comprehensive undo system** for error correction
-- ✅ **Uses S17 rules** (6 decks, dealer stands soft 17, 3:2 blackjack, DAS allowed)
+- **Tracks live casino blackjack games** in real-time
+- **Provides count-aware strategy advice** using exact Wizard of Odds thresholds  
+- **Includes the complete Illustrious 18** index plays with precise true count deviations
+- **Supports multiple players** and realistic casino game flow
+- **Features comprehensive undo system** for error correction
+- **Uses S17 rules** (6 decks, dealer stands soft 17, 3:2 blackjack, DAS allowed)
 
 ## 🎲 Core Features
 
@@ -103,28 +100,6 @@ Run basic strategy unit tests:
 python3 -m pytest tests/test_basic_strategy.py
 ```
 
-## 📁 Project Structure
-
-```
-bj_advisor/
-├── simulate.py              # 🚀 MAIN ENTRY POINT
-├── src/
-│   ├── core/               # Game engine
-│   │   ├── card.py         # Hi-Lo card system
-│   │   ├── hand.py         # Hand evaluation
-│   │   ├── table.py        # Game state management
-│   │   └── rules.py        # S17 rules
-│   ├── strategy/           # Strategy engine  
-│   │   ├── basic_strategy.py # S17 basic strategy tables
-│   │   ├── index_plays.py    # Illustrious 18 + deviations
-│   │   └── advisor.py        # Integrated recommendations
-│   └── tui/               # Terminal interface
-│       └── table_simulator.py # Enhanced UI with undo system
-└── tests/                 # Test suite
-    ├── test_basic_strategy.py      # Unit tests
-    └── test_professional_plays.py  # Index play verification
-```
-
 ## 🎖️ Professional Standards
 
 This advisor implements **exact thresholds from trusted sources**:
@@ -133,11 +108,3 @@ This advisor implements **exact thresholds from trusted sources**:
 - **Blackjack Apprenticeship** professional standards  
 - **Stanford Wong** methodology from "Professional Blackjack"
 - **Don Schlesinger** index play research from "Blackjack Attack"
-
-## ⚠️ Legal Notice
-
-This software is for **educational and training purposes only**. Use responsibly and in accordance with local laws and casino policies.
-
----
-
-**Ready to become a better blackjack player? Run `python3 simulate.py` and start practicing!** 🃏
